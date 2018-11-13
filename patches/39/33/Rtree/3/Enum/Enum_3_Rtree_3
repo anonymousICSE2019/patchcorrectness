@@ -1,0 +1,10 @@
+--- sourceFile_human/Point.java	2018-01-29 20:49:46.174398742 +0800
++++ sourceFile_Enum/Point.java	2018-01-29 18:47:46.014214000 +0800
+@@ -119,7 +120,7 @@
+ 
+     @Override
+     public boolean contains(double x, double y) {
+-        return x == x && y == y;
++        return (y == this.y);
+     }
+

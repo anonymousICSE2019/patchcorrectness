@@ -1,0 +1,21 @@
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101a
+   --> junit.framework.AssertionFailedError: expected:<NO> but was:<YES>
+ - com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101b
+   --> junit.framework.AssertionFailedError: expected:<NO> but was:<YES>
+ - com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testIssue1101
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineIfParametersModified8
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineIfParametersModified9
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.FunctionInjector
+--------------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+--- sourceFile_human/CharacterSetGenerator.java	2018-01-29 21:21:57.606447382 +0800
++++ sourceFile_CVC4/CharacterSetGenerator.java	2018-01-29 18:47:45.986214000 +0800
+@@ -27,7 +27,7 @@
+     public CharacterSetGenerator(Range<Integer> range, CharacterFilter filter) {
+         List<Character> chars = new LinkedList<Character>();
+ 
+-        for (int i = range.lowerBound(); i < range.upperBound(); i++) {
++        for (int i = range.lowerBound(); (i <= range.upperBound()); i++) {
+             if (filter.includeCharacter(i)) {
+                 chars.add((char) i);
+             }

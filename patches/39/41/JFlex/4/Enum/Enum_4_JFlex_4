@@ -1,0 +1,15 @@
+--- sourceFile_human/IntCharSet.java	2018-01-29 21:00:00.270414207 +0800
++++ sourceFile_Enum/IntCharSet.java	2018-01-29 18:47:46.014214000 +0800
+@@ -137,9 +137,9 @@
+         Interval x = intervals.get(i);
+         if (x.start > elem.end+1) return;
+         
+-        
+-        elem.end = x.end;
+-       
++        if ((x.end > elem.end))
++			elem.end = x.end;
+
+         intervals.remove(i);
+         size--;
+       }

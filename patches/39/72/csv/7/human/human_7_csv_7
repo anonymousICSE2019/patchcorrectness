@@ -1,0 +1,7 @@
+diff --git a/src/main/java/org/sfm/csv/parser/AbstractCsvCharConsumer.java b/src/main/java/org/sfm/csv/parser/AbstractCsvCharConsumer.java
+index 07db4e7..abaf463 100644
+--- a/src/main/java/org/sfm/csv/parser/AbstractCsvCharConsumer.java
++++ b/src/main/java/org/sfm/csv/parser/AbstractCsvCharConsumer.java
+@@ -125 +125 @@
+-		return csvBuffer.getMark() >= bufferIndex -1 ;
++		return (bufferIndex) <  (csvBuffer.getMark() + 1)  ;

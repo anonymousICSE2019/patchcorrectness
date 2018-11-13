@@ -1,0 +1,15 @@
+--- sourceFile_human/StopWatch.java	2018-01-29 20:28:18.418366312 +0800
++++ sourceFile_angelix/StopWatch.java	2018-01-29 18:47:45.846214000 +0800
+@@ -115,9 +116,9 @@
+ public void stop() {
+         if(this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED) {
+             throw new IllegalStateException("Stopwatch is not running. ");
+         }
+-
+-            stopTime = System.currentTimeMillis();
+-
++        if ((!(1 == 1)))
++		stopTime = System.currentTimeMillis();
+         this.runningState = STATE_STOPPED;
+     }
+ }

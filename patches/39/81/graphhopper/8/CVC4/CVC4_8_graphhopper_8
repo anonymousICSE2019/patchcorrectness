@@ -1,0 +1,10 @@
+--- sourceFile_human/DijkstraOneToMany.java	2018-01-29 21:44:53.562482034 +0800
++++ sourceFile_CVC4/DijkstraOneToMany.java	2018-01-29 18:47:45.990214000 +0800
+@@ -140,7 +140,7 @@
+             int parentNode = parents[to];
+             double x1= weights[to];
+             double x2=weights[currNode];
+-            if (parentNode != EMPTY_PARENT &&  x1 < x2)
++            if ((parentNode < x2))
+                 return to;
+ 

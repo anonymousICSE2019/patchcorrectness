@@ -1,0 +1,11 @@
+--- sourceFile_human/WalkerState.java	2018-01-29 21:52:12.166493079 +0800
++++ sourceFile_S3/WalkerState.java	2018-01-29 18:47:46.086214000 +0800
+@@ -144,9 +144,9 @@
+   public void seekToYear(String year) {
+     int yearInt = Integer.parseInt(year);System.out.println("Y: "+yearInt);
+-    if(yearInt > 0 && yearInt < 9999){
++    if(((yearInt >= 0) && (yearInt < 9999))){
+     }else{
+    	throw new RuntimeException("Assertion error");
+     }
+     markDateInvocation();

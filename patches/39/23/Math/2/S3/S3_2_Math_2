@@ -1,0 +1,11 @@
+--- sourceFile_human/ResizableDoubleArray.java	2018-01-29 20:38:48.482382179 +0800
++++ sourceFile_S3/ResizableDoubleArray.java	2018-01-29 18:47:46.050214000 +0800
+@@ -287,7 +287,7 @@
+         numElements = 0;
+         startIndex = 0;
+ 
+-        if (data != null && data.length > 1) {
++        if (data != null && (data.length > 0)) {
+             addElements(data);
+         }
+     }

@@ -1,0 +1,10 @@
+--- sourceFile_human/EntityPager.java	2018-01-29 22:07:35.018516320 +0800
++++ sourceFile_Enum/EntityPager.java	2018-01-29 18:47:45.990214000 +0800
+@@ -32,7 +33,7 @@
+ 
+ 	public Integer getNextStart()
+ 	{
+-		if (this.start + this.num >= this.total - 1) return null;
++		if ((this.num >= this.total)) return null;
+ 		else return this.start + this.num;
+ 	}

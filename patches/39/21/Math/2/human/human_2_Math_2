@@ -1,0 +1,8 @@
+diff --git a/src/main/java/org/apache/commons/math4/util/ResizableDoubleArray.java b/src/main/java/org/apache/commons/math4/util/ResizableDoubleArray.java
+index 6377141..7d9547c 100644
+--- a/src/main/java/org/apache/commons/math4/util/ResizableDoubleArray.java
++++ b/src/main/java/org/apache/commons/math4/util/ResizableDoubleArray.java
+@@ -290 +290 @@
+-        if (data != null && data.length > 1) {
++        if (data != null && data.length > 0) {
+

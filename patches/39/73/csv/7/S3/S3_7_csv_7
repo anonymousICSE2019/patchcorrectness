@@ -1,0 +1,10 @@
+--- sourceFile_human/AbstractCsvCharConsumer.java	2018-01-29 21:36:50.282469863 +0800
++++ sourceFile_S3/AbstractCsvCharConsumer.java	2018-01-29 18:47:46.086214000 +0800
+@@ -122,7 +122,7 @@
+ 	}
+ 
+ 	private boolean isAllConsumedFromMark(int bufferIndex) {
+-		return csvBuffer.getMark() >= bufferIndex -1 ;
++		return (csvBuffer.getMark() > (bufferIndex - 1)) ;
+ 	}
+ 

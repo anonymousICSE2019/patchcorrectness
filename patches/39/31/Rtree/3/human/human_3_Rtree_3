@@ -1,0 +1,7 @@
+diff --git a/src/main/java/com/github/davidmoten/rtree/geometry/Point.java b/src/main/java/com/github/davidmoten/rtree/geometry/Point.java
+index bf16bf1..57b4cb2 100644
+--- a/src/main/java/com/github/davidmoten/rtree/geometry/Point.java
++++ b/src/main/java/com/github/davidmoten/rtree/geometry/Point.java
+@@ -122 +122 @@
+-        return x == x && y == y;
++        return this.x == x && this.y == y;

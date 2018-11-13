@@ -1,0 +1,9 @@
+diff --git a/jflex/src/main/java/jflex/IntCharSet.java b/jflex/src/main/java/jflex/IntCharSet.java
+index 35e3f03..5e8452d 100644
+--- a/jflex/src/main/java/jflex/IntCharSet.java
++++ b/jflex/src/main/java/jflex/IntCharSet.java
+@@ -140 +140,3 @@
+-        elem.end = x.end;
++        if (x.end > elem.end) {
++          elem.end = x.end;
++        }

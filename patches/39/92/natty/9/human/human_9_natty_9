@@ -1,0 +1,7 @@
+diff --git a/src/main/java/com/joestelmach/natty/WalkerState.java b/src/main/java/com/joestelmach/natty/WalkerState.java
+index e39a265..102ae39 100644
+--- a/src/main/java/com/joestelmach/natty/WalkerState.java
++++ b/src/main/java/com/joestelmach/natty/WalkerState.java
+@@ -146 +146 @@
+-    assert(yearInt > 0 && yearInt < 9999);
++    assert(yearInt >= 0 && yearInt < 9999);

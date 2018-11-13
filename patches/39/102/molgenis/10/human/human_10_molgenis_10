@@ -1,0 +1,7 @@
+diff --git a/molgenis-core/src/main/java/org/molgenis/util/EntityPager.java b/molgenis-core/src/main/java/org/molgenis/util/EntityPager.java
+index 550fdb0..0443bca 100644
+--- a/molgenis-core/src/main/java/org/molgenis/util/EntityPager.java
++++ b/molgenis-core/src/main/java/org/molgenis/util/EntityPager.java
+@@ -35 +35 @@
+-		if (this.start + this.num >= this.total - 1) return null;
++		if (this.start + this.num > this.total - 1) return null;
